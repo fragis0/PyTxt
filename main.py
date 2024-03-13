@@ -1,3 +1,5 @@
+# installing colorama
+pip install colorama
 # import colorama for colors
 import colorama
 
