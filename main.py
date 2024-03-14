@@ -1,3 +1,20 @@
+import pip # import pip for installing colorama
+import os # for clearing terminal
+import platform # for getting os name
+
+# and install colorama
+if hasattr(pip, "main"):
+    pip.main(["install", "colorama"])
+else:
+    pip._internal.main(["install", "colorama"])
+    
+if platform.system() == "Linux":
+    # if Linux style
+    os.system('clear')
+elif platform.system == "Windows":
+    # if Windows style
+    os.system('cls')
+    
 # import colorama for colors
 import colorama
 
